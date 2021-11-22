@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* duke-blue: #000090ff; */
+/* denim-blue: #0044c0ff; */
+/* ultramarine-blue: #005bffff; */
+/* dodger-blue: #0092ffff; */
+/* sky-blue-crayola: #00dfffff; */
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.dukeBlue {
+    color: #000090ff;
+}
+
+.denimBlue {
+    color: #0044c0ff;
+}
+
+.ultramarineBlue {
+    color: #005bffff;
+}
+
+.dodgerBlue {
+    color: #0092ffff;
+}
+
+.skyBlue {
+    color: #00dfffff;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* duke-blue: #000090ff; */
+/* denim-blue: #0044c0ff; */
+/* ultramarine-blue: #005bffff; */
+/* dodger-blue: #0092ffff; */
+/* sky-blue-crayola: #00dfffff; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.header_header {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.header_hamburger {
+    display: none;
+}
+
+.header_bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.header_nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav-item {
+    margin-left: 5rem;
+    text-align: center;
+}
+
+.header_nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.header_nav-link:hover {
+    color: #0092ffff;
+}
+
+.header_nav-logo {
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .header_nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .header_nav-menu.header_active {
+        left: 0;
+    }
+
+    .header_nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .header_hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header_hamburger.header_active .header_bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header_hamburger.header_active .header_bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .header_hamburger.header_active .header_bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
