@@ -74,7 +74,7 @@ const Experience = () => {
                 <div className='accordion-item'>
                     <h1 className='accordion-header' id='flush-headingTwo'>
                         <button
-                            className='accordion-button collapsed fw-bold'
+                            className='accordion-button collapsed fw-bold fs-4'
                             type='button'
                             data-bs-toggle='collapse'
                             data-bs-target='#flush-collapseTwo'
@@ -91,11 +91,29 @@ const Experience = () => {
                         data-bs-parent='#experienceAccordian'
                     >
                         <div className='accordion-body'>
-                            Placeholder content for this accordion, which is
-                            intended to demonstrate the{' '}
-                            <code>.accordion-flush</code> className. This is the
-                            second item's accordion body. Let's imagine this
-                            being filled with some actual content.
+                            <p className='fw-bold fs-5' >
+                                Fair Share IT Services Pvt. Ltd.
+                            </p>
+                            <p className='fw-lighter fst-italic my-0 fs-6'>
+                                Sep 2019 - Nov 2019
+                            </p>
+                            <p className='fw-lighter fst-italic mt-0 fs-6'>
+                                Pune, Maharashtra, India
+                            </p>
+                            <p className='fw-normal fst-italic fs-5'>
+                                Worked as a intern on full stack technologies like (nodejs, mongodb, javascript, html5, css3)
+                            </p>
+                            <ul className="fw-normal fs-5">
+                                <li>
+                                    - build a gymnastics website
+                                </li>
+                                <li>
+                                    - documentations on APIs
+                                </li>
+                                <li>
+                                    - plannings on learning on new technology
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
